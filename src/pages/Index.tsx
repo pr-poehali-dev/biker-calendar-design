@@ -26,38 +26,22 @@ export default function Index() {
             transformOrigin: 'center center'
           }}
         >
-          {/* Рамка из мото-цепи */}
-          <div className="relative w-full h-full p-6 shadow-2xl">
-            {/* Имитация цепи по периметру - верхняя */}
-            <div className="absolute top-0 left-0 right-0 h-6 flex gap-1">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`top-${i}`} className="flex-1 h-full bg-gradient-to-b from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
+          {/* Металлическая рамка с заклёпками */}
+          <div className="relative w-full h-full bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-700 p-4 shadow-2xl">
+            {/* Заклёпки по углам */}
+            <div className="absolute top-2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
             
-            {/* Нижняя цепь */}
-            <div className="absolute bottom-0 left-0 right-0 h-6 flex gap-1">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`bottom-${i}`} className="flex-1 h-full bg-gradient-to-b from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
-            
-            {/* Левая цепь */}
-            <div className="absolute top-0 bottom-0 left-0 w-6 flex flex-col gap-1">
-              {Array.from({ length: 50 }).map((_, i) => (
-                <div key={`left-${i}`} className="flex-1 w-full bg-gradient-to-r from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
-            
-            {/* Правая цепь */}
-            <div className="absolute top-0 bottom-0 right-0 w-6 flex flex-col gap-1">
-              {Array.from({ length: 50 }).map((_, i) => (
-                <div key={`right-${i}`} className="flex-1 w-full bg-gradient-to-r from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
+            {/* Дополнительные заклёпки по периметру */}
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-1/2 -translate-y-1/2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-1/2 -translate-y-1/2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
 
             {/* Внутренняя рамка - место для фото */}
-            <div className="w-full h-full bg-black shadow-2xl border-2 border-zinc-800 flex items-center justify-center">
+            <div className="w-full h-full border-4 border-zinc-800/70 bg-black shadow-inner flex items-center justify-center">
               <span className="text-zinc-700 text-2xl font-semibold tracking-wider" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 PHOTO
               </span>
@@ -75,38 +59,22 @@ export default function Index() {
             transformOrigin: 'center center'
           }}
         >
-          {/* Рамка из мото-цепи */}
-          <div className="relative w-full h-full p-6 shadow-2xl">
-            {/* Имитация цепи по периметру - верхняя */}
-            <div className="absolute top-0 left-0 right-0 h-6 flex gap-1">
-              {Array.from({ length: 50 }).map((_, i) => (
-                <div key={`top-${i}`} className="flex-1 h-full bg-gradient-to-b from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
+          {/* Металлическая рамка с заклёпками */}
+          <div className="relative w-full h-full bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-700 p-4 shadow-2xl">
+            {/* Заклёпки по углам */}
+            <div className="absolute top-2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
             
-            {/* Нижняя цепь */}
-            <div className="absolute bottom-0 left-0 right-0 h-6 flex gap-1">
-              {Array.from({ length: 50 }).map((_, i) => (
-                <div key={`bottom-${i}`} className="flex-1 h-full bg-gradient-to-b from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
-            
-            {/* Левая цепь */}
-            <div className="absolute top-0 bottom-0 left-0 w-6 flex flex-col gap-1">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`left-${i}`} className="flex-1 w-full bg-gradient-to-r from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
-            
-            {/* Правая цепь */}
-            <div className="absolute top-0 bottom-0 right-0 w-6 flex flex-col gap-1">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`right-${i}`} className="flex-1 w-full bg-gradient-to-r from-zinc-600 to-zinc-700 rounded-sm border border-zinc-800 shadow-inner" />
-              ))}
-            </div>
+            {/* Дополнительные заклёпки по периметру */}
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-1/2 -translate-y-1/2 left-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
+            <div className="absolute top-1/2 -translate-y-1/2 right-2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-500 to-zinc-800 shadow-inner border border-zinc-900" />
 
             {/* Внутренняя рамка - место для фото */}
-            <div className="w-full h-full bg-black shadow-2xl border-2 border-zinc-800 flex items-center justify-center">
+            <div className="w-full h-full border-4 border-zinc-800/70 bg-black shadow-inner flex items-center justify-center">
               <span className="text-zinc-700 text-2xl font-semibold tracking-wider" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 PHOTO
               </span>
