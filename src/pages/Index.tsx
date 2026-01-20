@@ -18,7 +18,7 @@ export default function Index() {
 
         {/* Левая вертикальная рамка с фото */}
         <div 
-          className="absolute left-[120px] top-1/2"
+          className="absolute left-[80px] top-1/2"
           style={{ 
             width: '355px', 
             height: '590px',
@@ -51,7 +51,7 @@ export default function Index() {
 
         {/* Правая горизонтальная рамка с фото */}
         <div 
-          className="absolute right-[100px] top-1/2"
+          className="absolute right-[60px] top-1/2"
           style={{ 
             width: '590px', 
             height: '355px',
